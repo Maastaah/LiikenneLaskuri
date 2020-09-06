@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container row p-0 m-0">
+    <div class="col-6">
+        <h2 class="text-info">Liikennelaskurin data</h2>
+    </div>
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Objektin tyyppi</th>
+                    <th>Nopeus</th>
+                    <th>Lämpötila</th>
+                    <th>Kosteus %</th>
+                    <th>Valoisuus</th>
+                    <th>Päivämäärä ja kellonaika</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/liikennelaskuriTable.js"></script>
+}
+
